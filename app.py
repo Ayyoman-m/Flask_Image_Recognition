@@ -1,5 +1,4 @@
 """Flask application routes for Hand Digit Image Recognition."""
-import sys
 from flask import Flask, render_template, request
 from model import preprocess_img, predict_result
 

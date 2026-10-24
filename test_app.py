@@ -27,7 +27,7 @@ def make_image_bytes():
 def test_home_page_loads(client):
     """Home page returns 200 and renders the upload form."""
     response = client.get("/")
-    assert response.status_code == 200
+    assert response.status_code == 201
     assert b"Hand Sign Digit" in response.data
 
 
