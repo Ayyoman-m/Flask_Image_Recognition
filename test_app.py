@@ -12,6 +12,7 @@ from model import preprocess_img, predict_result
 def fixture_client():
     """Configure Flask test client."""
     app.config["TESTING"] = True
+    app.config["WTF_CSRF_ENABLED"] = False
     with app.test_client() as test_client:
         yield test_client
 

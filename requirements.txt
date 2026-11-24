@@ -1,6 +1,8 @@
 flask
+flask-wtf
 tensorflow
 numpy
 pillow
 pylint
 pytest
+pytest-cov
